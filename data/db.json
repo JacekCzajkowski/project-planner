@@ -4,13 +4,20 @@
       "id": 1,
       "title": "Create new homepage banner",
       "details": "Lorem ipsum",
-      "complete": true
+      "complete": false
     },
     {
       "id": 2,
       "title": "Make marketing email",
       "details": "Lorem ipsum",
-      "complete": true
+      "complete": false
+    },
+    {
+      "title": "Make a new VUE app",
+      "details": "Do it like a pro!",
+      "copmlete": false,
+      "id": 3,
+      "complete": false
     }
   ]
 }
