@@ -4,7 +4,7 @@
     <input type="text" v-model="title" required>
     <label>Details:</label>
     <textarea v-model="details" required></textarea>
-    <button>Add Project</button>
+    <button>Update Project</button>
   </form>
 </template>
 
@@ -19,10 +19,11 @@ export default {
     }
   },
   mounted() {
-    fetch(uri)
+    fetch(this.uri)
     .then(res => res.json())
     .then(data => {
-      console.log(data)
+      this.title = data.title
+      this.details = data.details 
     })
   }
 }
