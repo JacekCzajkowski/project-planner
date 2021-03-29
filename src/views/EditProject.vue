@@ -19,7 +19,11 @@ export default {
     }
   },
   mounted() {
-    fetch()
+    fetch(uri)
+    .then(res => res.json())
+    .then(data => {
+      console.log(data)
+    })
   }
 }
 </script>
